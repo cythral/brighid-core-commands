@@ -104,7 +104,7 @@ namespace Brighid.Commands.Cicd.Utils
             {
                 var request = new DescribeStacksRequest { StackName = context.StackName };
                 var response = await cloudformation.DescribeStacksAsync(request, cancellationToken);
-                return response.Stacks.Any() ? ChangeSetType.UPDATE : ChangeSetType.UPDATE;
+                return response.Stacks.Any() ? ChangeSetType.UPDATE : ChangeSetType.CREATE;
             }
             catch
             {
