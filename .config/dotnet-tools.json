@@ -3,10 +3,8 @@
   "isRoot": true,
   "tools": {
     "brighid.commands.sdk.packagetool": {
-      "version": "0.1.0-beta6",
-      "commands": [
-        "pack-brighid-commands"
-      ]
+      "version": "0.1.0-beta7",
+      "commands": ["pack-brighid-commands"]
     }
   }
 }
