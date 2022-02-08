@@ -64,7 +64,6 @@ namespace Brighid.Commands.Cicd.Utils
                 Tags = tags,
             };
 
-            Console.WriteLine(request.ChangeSetType);
             var response = await cloudformation.CreateChangeSetAsync(request, cancellationToken);
             return response.StackId;
         }
@@ -106,7 +105,7 @@ namespace Brighid.Commands.Cicd.Utils
                 var request = new DescribeStacksRequest { StackName = context.StackName };
                 var response = await cloudformation.DescribeStacksAsync(request, cancellationToken);
 
-                return response.Stacks.FirstOrDefault()?.StackName == context.StackName
+                return response.Stacks.FirstOrDefault()?.StackStatus != StackStatus.REVIEW_IN_PROGRESS
                     ? ChangeSetType.UPDATE
                     : ChangeSetType.CREATE;
             }
