@@ -64,6 +64,7 @@ namespace Brighid.Commands.Cicd.Utils
                 Tags = tags,
             };
 
+            Console.WriteLine(request.ChangeSetType);
             var response = await cloudformation.CreateChangeSetAsync(request, cancellationToken);
             return response.StackId;
         }
