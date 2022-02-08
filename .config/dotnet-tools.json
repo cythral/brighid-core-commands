@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "brighid.commands.sdk.packagetool": {
+      "version": "0.1.0-beta6",
+      "commands": [
+        "pack-brighid-commands"
+      ]
+    }
+  }
+}

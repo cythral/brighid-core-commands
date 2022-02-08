@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <ProjectRootDirectory>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)../../'))</ProjectRootDirectory>
+        <RootNamespace>Brighid.Commands.Artifacts</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="ProjectRootDirectory">
+            <_Parameter1>$(ProjectRootDirectory)</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Amazon.CDK.Lib" Version="2.10.0" />
+        <PackageReference Include="Constructs" Version="10.0.50" />
+        <PackageReference Include="Microsoft.Build.Framework" Version="17.0.0" />
+        <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../Cicd.Utils/Cicd.Utils.csproj" />
+    </ItemGroup>
+</Project>
