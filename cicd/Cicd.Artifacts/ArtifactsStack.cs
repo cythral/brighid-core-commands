@@ -72,6 +72,16 @@ namespace Brighid.Commands.Artifacts
                 Principals = new[]
                 {
                     new AccountPrincipal(Fn.Ref("AWS::AccountId")),
+                },
+            }));
+
+            bucket.AddToResourcePolicy(new PolicyStatement(new PolicyStatementProps
+            {
+                Effect = Effect.ALLOW,
+                Actions = new[] { "s3:GetObject" },
+                Resources = new[] { bucket.BucketArn, $"{bucket.BucketArn}/*" },
+                Principals = new[]
+                {
                     new ArnPrincipal(Fn.ImportValue("cfn-metadata:DevAccountId")),
                     new ArnPrincipal(Fn.ImportValue("cfn-metadata:ProdAccountId")),
                 },
