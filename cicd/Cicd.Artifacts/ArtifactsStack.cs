@@ -72,8 +72,8 @@ namespace Brighid.Commands.Artifacts
                 Principals = new[]
                 {
                     new AccountPrincipal(Fn.Ref("AWS::AccountId")),
-                    new ArnPrincipal(Fn.ImportValue("cfn-metadata:DevAgentRoleArn")),
-                    new ArnPrincipal(Fn.ImportValue("cfn-metadata:ProdAgentRoleArn")),
+                    new ArnPrincipal(Fn.ImportValue("cfn-metadata:DevAccountId")),
+                    new ArnPrincipal(Fn.ImportValue("cfn-metadata:ProdAccountId")),
                 },
             }));
 
