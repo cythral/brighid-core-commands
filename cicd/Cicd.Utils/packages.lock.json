@@ -37,11 +37,11 @@
       },
       "StyleCop.Analyzers": {
         "type": "Direct",
-        "requested": "[1.2.0-beta.354, )",
-        "resolved": "1.2.0-beta.354",
-        "contentHash": "oDSJNxnEvIzAQTkpkc/FnJP4dQ7TV6fHMsI+2ckU5DOaMiwiEfh1fawMsSqz2bCoNwbTt9lS6MgYvyVKujNJoA==",
+        "requested": "[1.2.0-beta.66, )",
+        "resolved": "1.2.0-beta.66",
+        "contentHash": "56BLleVxQtFMZEe9CI0H6uuBDsOXz4r1S3A/3ORO3n8voVW1jr7EFFSpExWGJT+VZgs5sSe8zdOxJEsg6MIWww==",
         "dependencies": {
-          "StyleCop.Analyzers.Unstable": "1.2.0.354"
+          "StyleCop.Analyzers.Unstable": "1.2.0.66"
         }
       },
       "AWSSDK.Core": {
@@ -51,8 +51,8 @@
       },
       "StyleCop.Analyzers.Unstable": {
         "type": "Transitive",
-        "resolved": "1.2.0.354",
-        "contentHash": "/3RlM31XbJ02gaWh7dVumWOyMvGHswb/zygGJXd9oEJMRyyYc/HFJlAC5gBPxvi9cB4CMvIyyUTmZz5VLKwTvg=="
+        "resolved": "1.2.0.66",
+        "contentHash": "tn26fZSw90bnUhYQOZvS6egRGUU9s+/RnxiGiXlimB44hzzARErdWyvUwO9R+1HcmEY1m9SewQDeT4HYM4oDtw=="
       }
     }
   }
