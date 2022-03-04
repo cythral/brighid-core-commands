@@ -40,5 +40,5 @@ jobs:
 
       - name: Continue Update Rollback
         run: |
-          aws cloudformation delete-stack --stack-name brighid-core-commands
+          aws cloudformation delete-stack --stack-name brighid-core-commands --retain-resources Command0 Command1
           aws cloudformation wait stack-delete-complete --stack-name brighid-core-commands
