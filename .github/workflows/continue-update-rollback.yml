@@ -38,7 +38,7 @@ jobs:
           role-to-assume: ${{ steps.map-environment.outputs.role }}
           aws-region: us-east-1
 
-     - name: Continue Update Rollback
-       run: |
-         aws cloudformation continue-update-rollback --stack-name brighid-core-commands
-         aws cloudformation wait stack-rollback-complete --stack-name brighid-core-commands
+      - name: Continue Update Rollback
+        run: |
+          aws cloudformation continue-update-rollback --stack-name brighid-core-commands
+          aws cloudformation wait stack-rollback-complete --stack-name brighid-core-commands
