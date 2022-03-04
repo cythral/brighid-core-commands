@@ -30,7 +30,7 @@ namespace Brighid.Commands.CoreCommands.Ping
         public Task<CommandResult> Run(CommandContext<PingCommandRequest> context, CancellationToken cancellationToken = default)
         {
             logger.LogInformation("Received command request: {@context}", context);
-            return Task.FromResult(new CommandResult("Pong2"));
+            return Task.FromResult(new CommandResult("Pong"));
         }
     }
 }
