@@ -7,7 +7,7 @@ stackName=brighid-core-commands
 command="aws cloudformation delete-stack --stack-name $stackName"
 
 if [ "$resourcesToRetain" != "" ]; then
-    command="$command --resources-to-retain $resourcesToRetain"
+    command="$command --retain-resources $resourcesToRetain"
 fi
 
 $command
