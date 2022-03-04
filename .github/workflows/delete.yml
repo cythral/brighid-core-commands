@@ -38,7 +38,7 @@ jobs:
           role-to-assume: ${{ steps.map-environment.outputs.role }}
           aws-region: us-east-1
 
-      - name: Continue Update Rollback
+      - name: Delete
         run: |
-          aws cloudformation delete-stack --stack-name brighid-core-commands --retain-resources Command0 Command1
+          aws cloudformation delete-stack --stack-name brighid-core-commands
           aws cloudformation wait stack-delete-complete --stack-name brighid-core-commands
