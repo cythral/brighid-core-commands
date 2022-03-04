@@ -5,6 +5,9 @@ on:
       environment:
         type: environment
 
+      resources-to-retain:
+        type: string
+
 permissions:
   contents: write
   id-token: write
@@ -39,6 +42,4 @@ jobs:
           aws-region: us-east-1
 
       - name: Delete
-        run: |
-          aws cloudformation delete-stack --stack-name brighid-core-commands
-          aws cloudformation wait stack-delete-complete --stack-name brighid-core-commands
+        run: ./cicd/Scripts/delete-stack.sh ${{ github.event.inputs.resources-to-retain }}
