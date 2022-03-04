@@ -17,7 +17,7 @@ jobs:
         id: map-environment
         with:
           export_to: output
-          key: ${{ inputs.environment }}
+          key: ${{ github.event.inputs.environment }}
           map: |
             {
               "Development": {
