@@ -10,7 +10,7 @@ permissions:
   id-token: write
 
 jobs:
-  continue-update-rollback:
+  delete:
     runs-on: ubuntu-latest
     steps:
       - uses: kanga333/variable-mapper@master
