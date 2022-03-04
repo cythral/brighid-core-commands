@@ -27,7 +27,7 @@ jobs:
       artifacts-location: ${{ steps.build.outputs.artifacts-location }}
       version: ${{ steps.build.outputs.version }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
