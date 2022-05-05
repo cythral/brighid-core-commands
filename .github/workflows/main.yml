@@ -89,9 +89,20 @@ jobs:
               }
             ]
 
+  start-dev-db:
+    uses: cythral/mutedac/.github/workflows/start.yml@master
+    needs: build
+    with:
+      environment: Development
+    secrets:
+      role: ${{ secrets.AWS_DEV_ROLE }}
+      discord-webhook: ${{ secrets.DISCORD_WEBHOOK }}
+  
   deploy-dev:
     uses: cythral/brighid-core-commands/.github/workflows/deploy.yml@master
-    needs: build
+    needs: 
+      - build
+      - start-dev-db
     with:
       environment: Development
       artifacts-location: ${{ needs.build.outputs.artifacts-location }}

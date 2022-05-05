@@ -12,6 +12,7 @@ namespace Brighid.Commands.Cicd.DeployDriver
     /// <inheritdoc />
     public class Host : IHost
     {
+        private readonly EcsDeployer ecsDeployer;
         private readonly StackDeployer deployer;
         private readonly CommandLineOptions options;
         private readonly IHostApplicationLifetime lifetime;
@@ -19,17 +20,20 @@ namespace Brighid.Commands.Cicd.DeployDriver
         /// <summary>
         /// Initializes a new instance of the <see cref="Host" /> class.
         /// </summary>
+        /// <param name="ecsDeployer">Service for deploying ECS Services.</param>
         /// <param name="deployer">Service for deploying cloudformation stacks.</param>
         /// <param name="options">Command line options.</param>
         /// <param name="lifetime">Service that controls the application lifetime.</param>
         /// <param name="serviceProvider">Object that provides access to the program's services.</param>
         public Host(
+            EcsDeployer ecsDeployer,
             StackDeployer deployer,
             IOptions<CommandLineOptions> options,
             IHostApplicationLifetime lifetime,
             IServiceProvider serviceProvider
         )
         {
+            this.ecsDeployer = ecsDeployer;
             this.deployer = deployer;
             this.options = options.Value;
             this.lifetime = lifetime;
@@ -43,6 +47,22 @@ namespace Brighid.Commands.Cicd.DeployDriver
         public async Task StartAsync(CancellationToken cancellationToken = default)
         {
             cancellationToken.ThrowIfCancellationRequested();
+
+            await Step("Deploy identity service", async () =>
+            {
+                cancellationToken.ThrowIfCancellationRequested();
+
+                var request = new EcsDeployContext { ClusterName = "brighid", ServiceName = "identity" };
+                await ecsDeployer.Deploy(request, cancellationToken);
+            });
+
+            await Step("Deploy commands service", async () =>
+            {
+                cancellationToken.ThrowIfCancellationRequested();
+
+                var request = new EcsDeployContext { ClusterName = "brighid", ServiceName = "commands" };
+                await ecsDeployer.Deploy(request, cancellationToken);
+            });
 
             await Step($"Deploy template to {options.Environment}", async () =>
             {

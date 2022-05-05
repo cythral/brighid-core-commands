@@ -23,6 +23,7 @@ await Microsoft.Extensions.Hosting.Host
 {
     services.Configure<CommandLineOptions>(context.Configuration.GetSection("CommandLineOptions"));
     services.AddSingleton<IHost, Brighid.Commands.Cicd.DeployDriver.Host>();
+    services.AddSingleton<EcsDeployer>();
     services.AddSingleton<StackDeployer>();
     services.AddSingleton<EcrUtils>();
 })
