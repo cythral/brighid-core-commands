@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <ItemGroup>
         <PackageReference Include="Brighid.Commands.Sdk" Version="0.1.2" />
+        <PackageReference Include="Brighid.Identity.Client" Version="0.6.0-beta1" />
     </ItemGroup>
 </Project>
