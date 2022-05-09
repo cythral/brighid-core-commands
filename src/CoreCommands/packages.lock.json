@@ -4,13 +4,13 @@
     "net6.0": {
       "Brighid.Commands.Sdk": {
         "type": "Direct",
-        "requested": "[0.1.1, )",
-        "resolved": "0.1.1",
-        "contentHash": "ORhgNjA+CTUMIiCxxStYPxyVZRvlyPtQPrvB1jq+Hzr2xY95v4FJv6eCGWOmSCdUWr2NnmDqJSs43v61n8erxQ==",
+        "requested": "[0.1.2, )",
+        "resolved": "0.1.2",
+        "contentHash": "yyJLnSRRLFGq3urbAzzQvfmjqrs8gq7aU5qSqh1YsAHBHVxtdzW3KNLmAOCuKht5pKHr9P9xL9+rdW1D5CKZkQ==",
         "dependencies": {
-          "Brighid.Commands.Sdk.Attributes": "0.1.1",
-          "Brighid.Commands.Sdk.Core": "0.1.1",
-          "Brighid.Commands.Sdk.Generator": "0.1.1"
+          "Brighid.Commands.Sdk.Attributes": "0.1.2",
+          "Brighid.Commands.Sdk.Core": "0.1.2",
+          "Brighid.Commands.Sdk.Generator": "0.1.2"
         }
       },
       "Nerdbank.GitVersioning": {
@@ -30,23 +30,23 @@
       },
       "Brighid.Commands.Sdk.Attributes": {
         "type": "Transitive",
-        "resolved": "0.1.1",
-        "contentHash": "IKxL8H+iGnNxKX+qF2mH7wEuAv9b/a8f7YVvBrRwTJhEeN1/jHw8A3IxBWPgZ7dYjXeD/IWEOsS07LiRTXBOIQ=="
+        "resolved": "0.1.2",
+        "contentHash": "qn43K15pDjNYdKLxF2/c5Ol/xm3S9O8ONZmXEG5kSaO72XrFq79CFGStPfCDzLir/eg/K8ZO3f1wOKbFYSv0PA=="
       },
       "Brighid.Commands.Sdk.Core": {
         "type": "Transitive",
-        "resolved": "0.1.1",
-        "contentHash": "PJc3mjFfWXAN1fMTkLHo+igf7dqGffENzb7OATTtrDX3Lj9A1l2EK70JUi1ksAuXLC/plPlzat/KWHLFNj87/Q==",
+        "resolved": "0.1.2",
+        "contentHash": "X9u4BJ/WNAIAJOKUWkukrG2h3YPkHIGFqJgEbBRLJULXRXn30gw2B5RQw7DthrmZEegmBaAvPSQGCT/dJKIQZA==",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.0"
         }
       },
       "Brighid.Commands.Sdk.Generator": {
         "type": "Transitive",
-        "resolved": "0.1.1",
-        "contentHash": "xKr3gnXkC3NyNYTqZNOXGFHbaN9uyA5LW9q0cadNjEBi2Pkcx/GTQ88RwY4xnCdhb9XiL9+OgGNbCWs90u6hpQ==",
+        "resolved": "0.1.2",
+        "contentHash": "3jOrDJRHNM3tfoCECil9Rnq60uWdcpyyZ2vlTdd02Uq8BFJcj60g4yxsDSobWkgaVS+aL3CunT6Va4hMpmOpxA==",
         "dependencies": {
-          "Brighid.Commands.Sdk.Models": "0.1.1",
+          "Brighid.Commands.Sdk.Models": "0.1.2",
           "Microsoft.CodeAnalysis": "4.1.0",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.1.0",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
@@ -56,8 +56,8 @@
       },
       "Brighid.Commands.Sdk.Models": {
         "type": "Transitive",
-        "resolved": "0.1.1",
-        "contentHash": "oMOyE7zi2RLvoVoz+0IRCfephZSZfA+hInguJmFh3zoXDbFFw3qIPEaqkjr0jQjxM2si9TNcRpgiGEoQ1s6UhA==",
+        "resolved": "0.1.2",
+        "contentHash": "mYbbXJADlH7GXoet8uxnJ6NfUtITidbO5ziM0jA4RJM1FR3JkodyjRIyYA4yOEyeIhyrrHRLG4VpLOywgrUSdQ==",
         "dependencies": {
           "YamlDotNet": "11.2.1"
         }
