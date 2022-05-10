@@ -37,7 +37,7 @@ namespace Brighid.Commands.CoreCommands.Debug
         public async Task<CommandResult> Run(CommandContext<DebugCommandRequest> context, CancellationToken cancellationToken = default)
         {
             cancellationToken.ThrowIfCancellationRequested();
-            logger.LogInformation("Received command request: {@context}", context);
+            logger.LogInformation("Received command request: {@mode}", context.Input.Mode);
 
             try
             {
