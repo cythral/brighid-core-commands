@@ -72,8 +72,8 @@
       },
       "Amazon.JSII.Runtime": {
         "type": "Transitive",
-        "resolved": "1.60.0",
-        "contentHash": "NIrVj0eJPDqnq/8EhWFsoZxIjvK1HcncInQtNR6FnneZVa7R/8tKOr+54ktKnrrfqqcAWUHI7hvyjIEJxhhgpw==",
+        "resolved": "1.60.1",
+        "contentHash": "9mg88opeFnC+6uA9xRLAns5nf/wigPd6uepYSCONbEI3Ze3ib+TcMtVjU+31VixAtMYJxlP2IHzsixtVTc7l9A==",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
           "Microsoft.Extensions.Logging": "5.0.0",
@@ -112,10 +112,10 @@
       },
       "Constructs": {
         "type": "Transitive",
-        "resolved": "10.1.33",
-        "contentHash": "zDvDxAWZ7tLRuWUr7e01jaw01u3gPsqayd4id/ySfBbxPR7bY9dHIxCYMiS5K528j9RuhNltOQHONqa5JWs5+w==",
+        "resolved": "10.1.34",
+        "contentHash": "sBOu4uoNVu/sG+SWn3NpMpQKCopUFMWzR3mM316B4sbk8CuAIcP47I4tnqN/bJbhohvbhLleC0vEGhpnsTsJwg==",
         "dependencies": {
-          "Amazon.JSII.Runtime": "[1.60.0, 2.0.0)"
+          "Amazon.JSII.Runtime": "[1.60.1, 2.0.0)"
         }
       },
       "Microsoft.Build.Framework": {
@@ -658,7 +658,7 @@
         "dependencies": {
           "Amazon.CDK.Lib": "2.27.0",
           "Cicd.Utils": "1.0.0",
-          "Constructs": "10.1.33",
+          "Constructs": "10.1.34",
           "Microsoft.Build.Framework": "17.2.0",
           "Microsoft.Build.Utilities.Core": "17.2.0"
         }
