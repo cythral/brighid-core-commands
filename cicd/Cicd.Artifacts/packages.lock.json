@@ -72,31 +72,31 @@
       },
       "AWSSDK.CloudFormation": {
         "type": "Transitive",
-        "resolved": "3.7.10.10",
-        "contentHash": "ntyEO9WhqNB2epdhZL4IHHgtFf6MOTf2uO+JQla462XSCAo4asqEechnhW8FBzdvSUA0wB7Zlekkklx9F9MdOA==",
+        "resolved": "3.7.10.11",
+        "contentHash": "0Jo/tmFsJQQ6oSdfBNM7wwY3qY87kjLLvd3I4vf2xZfLMQMmtd/bkOJ9Ndabh3GSx/auF9uW8jhD+AyYGXKQCg==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.12.1, 4.0.0)"
+          "AWSSDK.Core": "[3.7.12.2, 4.0.0)"
         }
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.12.1",
-        "contentHash": "11UsNwz0mljKDjJHTVjOJ9Wnmvfc8vUGfwkbIN8C0Qu/TlPalsA7S8ZdmDnBa7oDVrYsyVr5TJAsCDTrv+Mf7w=="
+        "resolved": "3.7.12.2",
+        "contentHash": "P0VKY4Y3/UWaj7Spn/q/A2utEu5NMuJ7tHWLAB7rcTubsPR7LCuIzBlIypSUgDyS4OWnFxwB1hBHF2iklAR0KA=="
       },
       "AWSSDK.ECR": {
         "type": "Transitive",
-        "resolved": "3.7.4.35",
-        "contentHash": "SXqDRNZ/0yRyDN87ZoiWKjhjUpUQ/B+Ppoln5utVgdtH31EiKSgozkRPzw3Sx1WwKvsGj8LEcq+hhEolNRJFcA==",
+        "resolved": "3.7.4.36",
+        "contentHash": "4obdf0RkiVA0VFfoaASuJZvhi3/9IePUxzxTLXDAuvquirMuUZBtjFOMwwx10da0XrI454MP6uLH/HgL6+yiRA==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.12.1, 4.0.0)"
+          "AWSSDK.Core": "[3.7.12.2, 4.0.0)"
         }
       },
       "AWSSDK.ECRPublic": {
         "type": "Transitive",
-        "resolved": "3.7.0.173",
-        "contentHash": "G6UHAkoWEJuYdX9/YOwKC9Kgcx0XldXLRO2fsVVGwpD4RAL7caU8mE6oAPY6YmH6EFzQNcysx4iUFfjp90gu8A==",
+        "resolved": "3.7.0.174",
+        "contentHash": "9H5wVpGQEdD0ZgvtIgYXFMfwtAzPpSXA9yF49tEMCS1YH1C6c2D2WTOez4rBjPA/+b7sA+G36aS8FNUX6w9zRw==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.12.1, 4.0.0)"
+          "AWSSDK.Core": "[3.7.12.2, 4.0.0)"
         }
       },
       "Microsoft.Extensions.Configuration": {
@@ -461,9 +461,9 @@
       "cicd.utils": {
         "type": "Project",
         "dependencies": {
-          "AWSSDK.CloudFormation": "3.7.10.10",
-          "AWSSDK.ECR": "3.7.4.35",
-          "AWSSDK.ECRPublic": "3.7.0.173"
+          "AWSSDK.CloudFormation": "3.7.10.11",
+          "AWSSDK.ECR": "3.7.4.36",
+          "AWSSDK.ECRPublic": "3.7.0.174"
         }
       }
     }
