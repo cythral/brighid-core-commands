@@ -4,8 +4,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AWSSDK.ECS" Version="3.7.5.47" />
-        <PackageReference Include="AWSSDK.S3" Version="3.7.9.20" />
+        <PackageReference Include="AWSSDK.ECS" Version="3.7.5.48" />
+        <PackageReference Include="AWSSDK.S3" Version="3.7.9.21" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
     </ItemGroup>
 
