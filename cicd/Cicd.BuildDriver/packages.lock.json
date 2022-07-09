@@ -63,8 +63,8 @@
       },
       "Amazon.CDK.Lib": {
         "type": "Transitive",
-        "resolved": "2.31.0",
-        "contentHash": "uurcSm5iBHSt/H4ALxDN2jskWoMzizh8vFpQmPbINlHQoV9AZC562eXr1a64mQEQka0rstKiaCvabMgxtqfFog==",
+        "resolved": "2.31.1",
+        "contentHash": "U9fTXJnntAVrc4x+WSkYoyeVqxz0RYbDRZKbBy5pDtb0nxCuzMFkyh62CmVbLX/mkcg4ANbgpmseoW9Ou5wYww==",
         "dependencies": {
           "Amazon.JSII.Runtime": "[1.60.1, 2.0.0)",
           "Constructs": "[10.0.0, 11.0.0)"
@@ -656,7 +656,7 @@
       "cicd.artifacts": {
         "type": "Project",
         "dependencies": {
-          "Amazon.CDK.Lib": "2.31.0",
+          "Amazon.CDK.Lib": "2.31.1",
           "Cicd.Utils": "1.0.0",
           "Constructs": "10.1.43",
           "Microsoft.Build.Framework": "17.2.0",
