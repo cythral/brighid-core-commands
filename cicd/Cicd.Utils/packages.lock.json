@@ -4,29 +4,29 @@
     "net6.0": {
       "AWSSDK.CloudFormation": {
         "type": "Direct",
-        "requested": "[3.7.11.2, )",
-        "resolved": "3.7.11.2",
-        "contentHash": "99XB4fFi7JM1vg+ulJonnsXLmY4VxqBHSEEM1+Sp5IHyBm2fTeKhWDdx9rGugGh7TPQriH3s7l7O+Cgl6Lm1eg==",
+        "requested": "[3.7.11.6, )",
+        "resolved": "3.7.11.6",
+        "contentHash": "icvya9Y5FWHLuY2hKDytUiZEBd1+13Ck1rPLER4y1OZXjDbz38rihYbK/yLhs5EADtDZaHtaKMtguK6dJQuEcA==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.12.7, 4.0.0)"
+          "AWSSDK.Core": "[3.7.12.11, 4.0.0)"
         }
       },
       "AWSSDK.ECR": {
         "type": "Direct",
-        "requested": "[3.7.4.41, )",
-        "resolved": "3.7.4.41",
-        "contentHash": "Ah5r83KK8oyp/n0cuVm3WIpsDqdLkv9U7nEg5OxHQxVW5f8eD+Qtr+SFhX6mFF/xNUP9FNZPVbXPXtnk9rVW/g==",
+        "requested": "[3.7.4.45, )",
+        "resolved": "3.7.4.45",
+        "contentHash": "/c/ZDGI9jwM6lxF6URxHQoil841AobT00ckUIZnqUeNPaXP3/gqmcWXEmAiyXJqY+2bOwrVekWIQGNUXrdWBlw==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.12.7, 4.0.0)"
+          "AWSSDK.Core": "[3.7.12.11, 4.0.0)"
         }
       },
       "AWSSDK.ECRPublic": {
         "type": "Direct",
-        "requested": "[3.7.0.179, )",
-        "resolved": "3.7.0.179",
-        "contentHash": "z++MmMeP6AQYw6u4mf6EHg/MTqxxUgBVNX8ZTXpnq8PA4MF+L2R6wcijQ2TgyqMxKKigxkCzoYhXn4Z/SSEBJw==",
+        "requested": "[3.7.0.183, )",
+        "resolved": "3.7.0.183",
+        "contentHash": "y+DTGc4/sViM6/bV7C3KTA+d/e3hKbqjlE4wPS9liJ8BKnvUrZl9l3ir2u0qMptgY/AUpU1kQxIXx/Ss2Q8eFQ==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.12.7, 4.0.0)"
+          "AWSSDK.Core": "[3.7.12.11, 4.0.0)"
         }
       },
       "Nerdbank.GitVersioning": {
@@ -46,8 +46,8 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.12.7",
-        "contentHash": "2fxFzAFSGpL6vxSLwjw4vhxQ/v4rCHHdwOHGwQZHGoqEdY9j1ov52WvpaTYp1EfO1vLrS03z8ZlivghH1IlAiQ=="
+        "resolved": "3.7.12.11",
+        "contentHash": "Tb6llf5tUU8FiptuB6Xq8vaJpxXDRcWL39nkEiHkDhdctj9l2kPL0DydrCNCAVwLWWTlPXyLUD8i37Rm0mRjaw=="
       },
       "StyleCop.Analyzers.Unstable": {
         "type": "Transitive",
