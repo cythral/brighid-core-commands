@@ -2,6 +2,15 @@
   "version": 1,
   "dependencies": {
     "net6.0": {
+      "AWSSDK.SimpleEmail": {
+        "type": "Direct",
+        "requested": "[3.7.100.99, )",
+        "resolved": "3.7.100.99",
+        "contentHash": "MGlCY10V3bvGXTU2//BGQgwGz+Jz+ZHdlmyi45XttSIOoZxBSbyRfOAtHrKFsacr0jFPSL2KLJAu21h/Jt2s9g==",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.106.6, 4.0.0)"
+        }
+      },
       "Brighid.Commands.Sdk": {
         "type": "Direct",
         "requested": "[0.1.3, )",
@@ -41,6 +50,11 @@
         "dependencies": {
           "StyleCop.Analyzers.Unstable": "1.2.0.354"
         }
+      },
+      "AWSSDK.Core": {
+        "type": "Transitive",
+        "resolved": "3.7.106.6",
+        "contentHash": "8s5TQQNR7rAMovVbyvmfMTOTIS4aX0TH7nBB5L8TjJbNngX2LCf3q+MrDO/HffEvzT98ZawUsZQHme2PSUa9Bg=="
       },
       "Brighid.Commands.Sdk.Attributes": {
         "type": "Transitive",
