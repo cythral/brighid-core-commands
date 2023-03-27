@@ -38,15 +38,17 @@ namespace Brighid.Commands.CoreCommands.Email
         public async Task<CommandResult> Run(CommandContext<EmailCommandRequest> context, CancellationToken cancellationToken = default)
         {
             cancellationToken.ThrowIfCancellationRequested();
-            logger.LogInformation("Received email request: {@to} {@from} {@message}", context.Input.To, context.Input.From, context.Input.Message);
+            logger.LogInformation("Received email request: {@to} {@message}", context.Input.To, context.Input.Message);
 
             var destination = new Destination { ToAddresses = new List<string> { context.Input.To } };
             var subject = new Content { Data = context.Input.Subject };
             var content = new Content { Data = context.Input.Message };
             var request = new SendEmailRequest
             {
-                Source = context.Input.From,
+                Source = "system@brigh.id",
+                SourceArn = "arn:aws:ses:us-east-1:580493967798:identity/brigh.id",
                 Destination = destination,
+                ReplyToAddresses = new List<string> { context.Input.From },
                 Message = new Message
                 {
                     Subject = subject,
