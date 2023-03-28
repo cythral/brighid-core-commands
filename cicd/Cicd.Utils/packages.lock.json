@@ -4,29 +4,29 @@
     "net6.0": {
       "AWSSDK.CloudFormation": {
         "type": "Direct",
-        "requested": "[3.7.11.27, )",
-        "resolved": "3.7.11.27",
-        "contentHash": "apaBfZNQy8DEilbfba1lrzEbsQsHfCsYQF4mHzDJyBMmVlVNHIs7oUEkeLyAlSqrrHbMaW+cTAGeYx77DagUBA==",
+        "requested": "[3.7.104.38, )",
+        "resolved": "3.7.104.38",
+        "contentHash": "yR74rFu78u9RDy4WGSDZh6OwNLCtHElE5yAqb686CSuS86M0ve9aYJ/+OuwRt87K3pvVYcMgFxAuYn/uiP3xWw==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.13.2, 4.0.0)"
+          "AWSSDK.Core": "[3.7.106.7, 4.0.0)"
         }
       },
       "AWSSDK.ECR": {
         "type": "Direct",
-        "requested": "[3.7.4.66, )",
-        "resolved": "3.7.4.66",
-        "contentHash": "7ZIpR5rqVOkeQf0BmIUbT3gjdaghWekQ7V3sO2wXXUXOdoeVFW5RCfSI4mwQMMJ1/jqyndYxNja2Osf2T/2a7Q==",
+        "requested": "[3.7.100.100, )",
+        "resolved": "3.7.100.100",
+        "contentHash": "eVGkNAlyRZS+ZUszoU8zzqWyW/CzMBTE6Sj7a3KnsuPoMol2DuZqZOL+7gSTLk2M/DoiHNlwp4Ji6OP1nbJeoQ==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.13.2, 4.0.0)"
+          "AWSSDK.Core": "[3.7.106.7, 4.0.0)"
         }
       },
       "AWSSDK.ECRPublic": {
         "type": "Direct",
-        "requested": "[3.7.0.204, )",
-        "resolved": "3.7.0.204",
-        "contentHash": "0ENB3/kyOMTKqw4SsHza9VmmIfuJbmFqWv2rNyzMyxVtFzqsDoi02nlOu7Xrs/ScJCWxFZyBAQcKv1QrH3gcnw==",
+        "requested": "[3.7.101.49, )",
+        "resolved": "3.7.101.49",
+        "contentHash": "VVxFNti2OiqRVxW3/5okfg4ge5vw7A4H1EkKD2dgppliejbFUotFlzcCT5x+n3GX9XLi6sfUvI3fXgCuRuXyfg==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.13.2, 4.0.0)"
+          "AWSSDK.Core": "[3.7.106.7, 4.0.0)"
         }
       },
       "Nerdbank.GitVersioning": {
@@ -46,8 +46,8 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.13.2",
-        "contentHash": "qmOrKdgGUIuHxZ1vJqKPevhsXyPhaoZYu+1gVs2QGjIzJcExyJWNoWY28dI64bfQvLnQnVIaq0SbrHSMtnooeg=="
+        "resolved": "3.7.106.7",
+        "contentHash": "tLi8O+YLTvQjFY0jcfFUqMMv2zh97ZBgLPXqQty+PPnNomTY9NhjHMPzf0MlACwc0gdllN5yaf6heKoM2zDdKw=="
       },
       "StyleCop.Analyzers.Unstable": {
         "type": "Transitive",

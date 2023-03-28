@@ -4,11 +4,11 @@
     "net6.0": {
       "AWSSDK.SimpleEmail": {
         "type": "Direct",
-        "requested": "[3.7.100.99, )",
-        "resolved": "3.7.100.99",
-        "contentHash": "MGlCY10V3bvGXTU2//BGQgwGz+Jz+ZHdlmyi45XttSIOoZxBSbyRfOAtHrKFsacr0jFPSL2KLJAu21h/Jt2s9g==",
+        "requested": "[3.7.100.100, )",
+        "resolved": "3.7.100.100",
+        "contentHash": "tR1cEIG+EwjRpg5LbrkZbnD8TlHBlj3qsE7c5rZb0u+WAOr1MSZrpsbeshPXa9u58hKyVoBXZf6MXz2pp5+9PA==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.106.6, 4.0.0)"
+          "AWSSDK.Core": "[3.7.106.7, 4.0.0)"
         }
       },
       "Brighid.Commands.Sdk": {
@@ -53,8 +53,8 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.106.6",
-        "contentHash": "8s5TQQNR7rAMovVbyvmfMTOTIS4aX0TH7nBB5L8TjJbNngX2LCf3q+MrDO/HffEvzT98ZawUsZQHme2PSUa9Bg=="
+        "resolved": "3.7.106.7",
+        "contentHash": "tLi8O+YLTvQjFY0jcfFUqMMv2zh97ZBgLPXqQty+PPnNomTY9NhjHMPzf0MlACwc0gdllN5yaf6heKoM2zDdKw=="
       },
       "Brighid.Commands.Sdk.Attributes": {
         "type": "Transitive",
