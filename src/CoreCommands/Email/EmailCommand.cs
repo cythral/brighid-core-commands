@@ -1,8 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-using Amazon.SimpleEmail;
 using Amazon.SimpleEmail.Model;
 
 using Brighid.Commands.Sdk;
@@ -17,20 +17,20 @@ namespace Brighid.Commands.CoreCommands.Email
     [Command("email", StartupType = typeof(EmailCommandStartup))]
     public class EmailCommand : ICommand<EmailCommandRequest>
     {
-        private readonly IAmazonSimpleEmailService emailService;
+        private readonly IEmailServiceFactory emailServiceFactory;
         private readonly ILogger<EmailCommand> logger;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailCommand"/> class.
         /// </summary>
-        /// <param name="emailService">Service used for sending emails.</param>
+        /// <param name="emailServiceFactory">Service used for sending emails.</param>
         /// <param name="logger">Logger used to log info to some destination(s).</param>
         public EmailCommand(
-            IAmazonSimpleEmailService emailService,
+            IEmailServiceFactory emailServiceFactory,
             ILogger<EmailCommand> logger
         )
         {
-            this.emailService = emailService;
+            this.emailServiceFactory = emailServiceFactory;
             this.logger = logger;
         }
 
@@ -46,7 +46,6 @@ namespace Brighid.Commands.CoreCommands.Email
             var request = new SendEmailRequest
             {
                 Source = "system@brigh.id",
-                SourceArn = "arn:aws:ses:us-east-1:580493967798:identity/brigh.id",
                 Destination = destination,
                 ReplyToAddresses = new List<string> { context.Input.From },
                 Message = new Message
@@ -56,7 +55,9 @@ namespace Brighid.Commands.CoreCommands.Email
                 },
             };
 
-            logger.LogInformation("Sending email via SES");
+            logger.LogDebug("Sending email via SES");
+            var emailerRoleArn = Environment.GetEnvironmentVariable("EmailCommand__EmailerRoleArn") ?? throw new Exception("Could not find emailer role ARN.");
+            var emailService = await emailServiceFactory.Create(emailerRoleArn);
             var result = await emailService.SendEmailAsync(request, cancellationToken);
             logger.LogInformation("Send email with message ID: {@messageId}", result.MessageId);
 

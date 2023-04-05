@@ -1,3 +1,4 @@
+using Amazon.SecurityToken;
 using Amazon.SimpleEmail;
 
 using Brighid.Commands.Sdk;
@@ -13,6 +14,8 @@ namespace Brighid.Commands.CoreCommands.Email
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IAmazonSimpleEmailService, AmazonSimpleEmailServiceClient>();
+            services.AddSingleton<IAmazonSecurityTokenService, AmazonSecurityTokenServiceClient>();
+            services.AddSingleton<IEmailServiceFactory, EmailServiceFactory>();
         }
     }
 }
