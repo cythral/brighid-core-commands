@@ -62,12 +62,39 @@
         "resolved": "13.0.2",
         "contentHash": "hRPqCt2bxTvHN6iT2JNG2KznDPFgD5B6j0bQ7woSpfGctmjgAYdKQ+LYHUaj/7q8sN1AbIcTNbaO75g8IFmTjw=="
       },
+      "Amazon.CDK.Asset.AwsCliV1": {
+        "type": "Transitive",
+        "resolved": "2.2.97",
+        "contentHash": "iSAh0DugtD6XO5FL+g+O+yGgQQ0mxkmeISKKXdapAB938VQ1S+jwEopDBl68POxqFq/OxFNXFDuq1oOHGKWPrA==",
+        "dependencies": {
+          "Amazon.JSII.Runtime": "[1.77.0, 2.0.0)"
+        }
+      },
+      "Amazon.CDK.Asset.KubectlV20": {
+        "type": "Transitive",
+        "resolved": "2.1.1",
+        "contentHash": "d/Dtwp4PQ30awCAdGIueWC2H1+WI9F8vXFdUMkrTjTevNvMvW+L9r8xDXdxLwHJPswL6t+33/LMyKx1QmGtaTw==",
+        "dependencies": {
+          "Amazon.JSII.Runtime": "[1.70.0, 2.0.0)"
+        }
+      },
+      "Amazon.CDK.Asset.NodeProxyAgentV5": {
+        "type": "Transitive",
+        "resolved": "2.0.77",
+        "contentHash": "8SfKP8R8UcaHytTo60WFVmbiBJ1uwvYSA90kwioQ9yHfxGMRV8qTIyPYx+B/gmWtYCAQvrY+CdWE3Ll3X0o/zQ==",
+        "dependencies": {
+          "Amazon.JSII.Runtime": "[1.77.0, 2.0.0)"
+        }
+      },
       "Amazon.CDK.Lib": {
         "type": "Transitive",
-        "resolved": "2.41.0",
-        "contentHash": "o4FtIXRKOXe7CSkNC8N8MX+5mSUPzZK7wqPsIf+HalZbYIUrsRZG/DmBeR7UEuFPBiheBj2IkNFN90tAPFGRwg==",
+        "resolved": "2.72.1",
+        "contentHash": "RalqS7EBMlFFbwydlVxQj6ZYeysJgEbqyRajGMiZ2ASon1sN+DBG4jm0wvpshoKmGkTjzttVMBX9BCHxq22nxA==",
         "dependencies": {
-          "Amazon.JSII.Runtime": "[1.67.0, 2.0.0)",
+          "Amazon.CDK.Asset.AwsCliV1": "[2.2.97, 3.0.0)",
+          "Amazon.CDK.Asset.KubectlV20": "[2.1.1, 3.0.0)",
+          "Amazon.CDK.Asset.NodeProxyAgentV5": "[2.0.77, 3.0.0)",
+          "Amazon.JSII.Runtime": "[1.78.1, 2.0.0)",
           "Constructs": "[10.0.0, 11.0.0)"
         }
       },
@@ -491,7 +518,7 @@
       "cicd.artifacts": {
         "type": "Project",
         "dependencies": {
-          "Amazon.CDK.Lib": "[2.41.0, )",
+          "Amazon.CDK.Lib": "[2.72.1, )",
           "Cicd.Utils": "[1.0.0, )",
           "Constructs": "[10.1.303, )",
           "Microsoft.Build.Framework": "[17.3.1, )",
