@@ -13,11 +13,11 @@
       },
       "AWSSDK.SimpleEmail": {
         "type": "Direct",
-        "requested": "[3.7.100.100, )",
-        "resolved": "3.7.100.100",
-        "contentHash": "tR1cEIG+EwjRpg5LbrkZbnD8TlHBlj3qsE7c5rZb0u+WAOr1MSZrpsbeshPXa9u58hKyVoBXZf6MXz2pp5+9PA==",
+        "requested": "[3.7.100.106, )",
+        "resolved": "3.7.100.106",
+        "contentHash": "xDmRlv1tBpz4jepgHynXVieebQO2ZvqW8HVcgnGKp36vu3iML40ZgI+BuTGK8Se+e6aAALLv1GsJQ4ZKrfK0ZQ==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.106.7, 4.0.0)"
+          "AWSSDK.Core": "[3.7.106.13, 4.0.0)"
         }
       },
       "Brighid.Commands.Sdk": {
