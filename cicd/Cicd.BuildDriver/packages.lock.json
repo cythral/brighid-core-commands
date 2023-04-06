@@ -120,9 +120,10 @@
       },
       "Microsoft.Build.Framework": {
         "type": "Transitive",
-        "resolved": "17.3.1",
-        "contentHash": "cUlLl0HTN/sG79STW5bB9wKNC5sPjv7j7XPBKuaN6u7P67n81Jo4WXiyJ6Wd+ZQs8VtUnoccSn104GfVSbEkUw==",
+        "resolved": "17.5.0",
+        "contentHash": "j1AJfnCY8+dfc8rB3P/9o8P4174kZbEKwhLdkvLObvTGM6kfIZEgWYgd3IN7xJbNdxDfr9rT8Vr7/DaevyWKNg==",
         "dependencies": {
+          "Microsoft.Win32.Registry": "5.0.0",
           "System.Security.Permissions": "6.0.0"
         }
       },
@@ -380,6 +381,15 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
+      "Microsoft.Win32.Registry": {
+        "type": "Transitive",
+        "resolved": "5.0.0",
+        "contentHash": "dDoKi0PnDz31yAyETfRntsLArTlVAVzUzCIvvEDsDsucrl33Dl8pIJG06ePTJTI3tGpeyHS9Cq7Foc/s4EeKcg==",
+        "dependencies": {
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        }
+      },
       "Microsoft.Win32.SystemEvents": {
         "type": "Transitive",
         "resolved": "6.0.0",
@@ -462,6 +472,11 @@
           "System.Windows.Extensions": "6.0.0"
         }
       },
+      "System.Security.Principal.Windows": {
+        "type": "Transitive",
+        "resolved": "5.0.0",
+        "contentHash": "t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA=="
+      },
       "System.Text.Encodings.Web": {
         "type": "Transitive",
         "resolved": "6.0.0",
@@ -493,7 +508,7 @@
           "Amazon.CDK.Lib": "[2.41.0, )",
           "Cicd.Utils": "[1.0.0, )",
           "Constructs": "[10.1.303, )",
-          "Microsoft.Build.Framework": "[17.3.1, )",
+          "Microsoft.Build.Framework": "[17.5.0, )",
           "Microsoft.Build.Utilities.Core": "[17.3.1, )"
         }
       },
