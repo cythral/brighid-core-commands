@@ -17,6 +17,11 @@ namespace Brighid.Commands.CoreCommands.Email
     [Command("email", StartupType = typeof(EmailCommandStartup))]
     public class EmailCommand : ICommand<EmailCommandRequest>
     {
+        private static readonly List<string> AllowedDestinationEmails = new()
+        {
+            "recitalblooms@gmail.com",
+        };
+
         private readonly IEmailServiceFactory emailServiceFactory;
         private readonly ILogger<EmailCommand> logger;
 
@@ -39,6 +44,11 @@ namespace Brighid.Commands.CoreCommands.Email
         {
             cancellationToken.ThrowIfCancellationRequested();
             logger.LogInformation("Received email request: {@to} {@message}", context.Input.To, context.Input.Message);
+
+            if (!AllowedDestinationEmails.Contains(context.Input.To) && !context.Input.To.EndsWith("@cythral.com"))
+            {
+                return new CommandResult($"Not allowed to send to recipient: {context.Input.To}");
+            }
 
             var destination = new Destination { ToAddresses = new List<string> { context.Input.To } };
             var subject = new Content { Data = context.Input.Subject };
