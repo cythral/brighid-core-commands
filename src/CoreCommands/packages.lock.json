@@ -4,20 +4,20 @@
     "net6.0": {
       "AWSSDK.SecurityToken": {
         "type": "Direct",
-        "requested": "[3.7.101.50, )",
-        "resolved": "3.7.101.50",
-        "contentHash": "spPTRrVD7sBxlW7E0ZhB8sxhznRJWN0Jnd146MiHHgq4YGF5B2NEzEz4coFusA08o9fW1jiWlaFXk2VyXY9h9w==",
+        "requested": "[3.7.101.51, )",
+        "resolved": "3.7.101.51",
+        "contentHash": "QDkqTqO/+waFd1ocgq1fIko4hWpE++TmUBFq47UJLt7zGnF9K5jfJU8cOuDF3DP5ymESecsgbP4T5fsK/ODe7w==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.106.22, 4.0.0)"
+          "AWSSDK.Core": "[3.7.106.23, 4.0.0)"
         }
       },
       "AWSSDK.SimpleEmail": {
         "type": "Direct",
-        "requested": "[3.7.100.115, )",
-        "resolved": "3.7.100.115",
-        "contentHash": "8/dzpO6FvRYW7P4BZPn9IGPJ0jNVz73tzcL61IYMWHC4o7nADud0tOUckA1SXa5W9c7znHwQIyeK0c1Wjay9gQ==",
+        "requested": "[3.7.100.116, )",
+        "resolved": "3.7.100.116",
+        "contentHash": "N5i+LAsd2AHZF4UtehomYj2+64wlQqt6el0Q4J17MBUrTNQ0eXW27PFeFVE/J97GGzfetH3oXlHxYHsrgn4qOA==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.106.22, 4.0.0)"
+          "AWSSDK.Core": "[3.7.106.23, 4.0.0)"
         }
       },
       "Brighid.Commands.Sdk": {
@@ -62,8 +62,8 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.106.22",
-        "contentHash": "eIem8ZiuJXvd4V8UjSCiCL0gBdYbG8Bap7BNBRrGGS53NVtZeFk7SpCjAIcWbtHkudvi/Cegm20UDW688m17pw=="
+        "resolved": "3.7.106.23",
+        "contentHash": "prmiXvb+8+W0hczycdI93ELmeAo2wBdLLnXK9HQjzf9dr+V/JcBR/lktL9aM1xtuZqthc52VzFSAsxbZKfOfow=="
       },
       "Brighid.Commands.Sdk.Attributes": {
         "type": "Transitive",
