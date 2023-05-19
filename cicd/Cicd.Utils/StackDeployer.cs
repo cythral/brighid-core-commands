@@ -35,9 +35,9 @@ namespace Brighid.Commands.Cicd.Utils
             catch (NoUpdatesException)
             {
                 Console.WriteLine("Stack already up-to-date.");
+                await DeleteChangeSet(changeSetId, cancellationToken);
             }
 
-            await DeleteChangeSet(changeSetId, cancellationToken);
             return await GetOutputs(stackId, cancellationToken);
         }
 
