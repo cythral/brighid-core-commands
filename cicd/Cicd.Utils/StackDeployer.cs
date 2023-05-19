@@ -24,7 +24,7 @@ namespace Brighid.Commands.Cicd.Utils
         /// <returns>The resulting task.</returns>
         public async Task<Dictionary<string, string>> Deploy(DeployContext context, CancellationToken cancellationToken)
         {
-            var stackId = await CreateChangeSet(context, cancellationToken);
+            var (stackId, changeSetId) = await CreateChangeSet(context, cancellationToken);
 
             try
             {
@@ -37,10 +37,11 @@ namespace Brighid.Commands.Cicd.Utils
                 Console.WriteLine("Stack already up-to-date.");
             }
 
+            await DeleteChangeSet(changeSetId, cancellationToken);
             return await GetOutputs(stackId, cancellationToken);
         }
 
-        private async Task<string> CreateChangeSet(DeployContext context, CancellationToken cancellationToken)
+        private async Task<(string StackId, string ChangeSetId)> CreateChangeSet(DeployContext context, CancellationToken cancellationToken)
         {
             cancellationToken.ThrowIfCancellationRequested();
 
@@ -65,7 +66,7 @@ namespace Brighid.Commands.Cicd.Utils
             };
 
             var response = await cloudformation.CreateChangeSetAsync(request, cancellationToken);
-            return response.StackId;
+            return (response.StackId, response.Id);
         }
 
         private async Task WaitForChangeSetCreate(string stackId, DeployContext context, CancellationToken cancellationToken)
@@ -157,6 +158,13 @@ namespace Brighid.Commands.Cicd.Utils
                     throw new Exception("Deployment failed.");
                 }
             }
+        }
+
+        private async Task DeleteChangeSet(string changeSetId, CancellationToken cancellationToken)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+            var request = new DeleteChangeSetRequest { ChangeSetName = changeSetId };
+            await cloudformation.DeleteChangeSetAsync(request, cancellationToken);
         }
 
         private async Task<List<StackEvent>> GetStackEvents(string? lastEventId, string stackId, DeployContext context, CancellationToken cancellationToken)
