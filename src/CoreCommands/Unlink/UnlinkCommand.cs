@@ -12,6 +12,7 @@ namespace Brighid.Commands.CoreCommands.Unlink
     /// Ping command.
     /// </summary>
     [Command("unlink", StartupType = typeof(UnlinkCommandStartup))]
+    [RequiresScope("token")]
     public class UnlinkCommand : ICommand<UnlinkCommandRequest>
     {
         private readonly ILogger<UnlinkCommand> logger;
