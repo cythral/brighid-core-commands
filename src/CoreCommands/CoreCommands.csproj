@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <ItemGroup>
-        <PackageReference Include="AWSSDK.SecurityToken" Version="3.7.103.12" />
-        <PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.100.143" />
+        <PackageReference Include="AWSSDK.SecurityToken" Version="3.7.103.13" />
+        <PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.100.144" />
         <PackageReference Include="Brighid.Commands.Sdk" Version="0.2.0-beta2" />
         <PackageReference Include="Brighid.Identity.Client" Version="0.7.0.62" />
     </ItemGroup>
