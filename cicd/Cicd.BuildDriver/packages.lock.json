@@ -140,8 +140,8 @@
       },
       "Constructs": {
         "type": "Transitive",
-        "resolved": "10.2.60",
-        "contentHash": "OwlV1P+Y81lcoRzHmOGr62wRYK9chxax7EJK2Qvx+iBSSv/oQBXJWS7hv2aW/dT9q/qMyN9ILFJNTxiuhnMyfg==",
+        "resolved": "10.2.61",
+        "contentHash": "zOAnIxLKEG7PyprWE7ifVLcIiakYBM8gMrEaq/YHJ809Q7m4zL/3XREnqLbiprYHb+Uyrl6rO00g9IC3qKeYsw==",
         "dependencies": {
           "Amazon.JSII.Runtime": "[1.84.0, 2.0.0)"
         }
@@ -493,7 +493,7 @@
         "dependencies": {
           "Amazon.CDK.Lib": "[2.85.0, )",
           "Cicd.Utils": "[1.0.0, )",
-          "Constructs": "[10.2.60, )",
+          "Constructs": "[10.2.61, )",
           "Microsoft.Build.Framework": "[17.6.3, )",
           "Microsoft.Build.Utilities.Core": "[17.6.3, )"
         }
