@@ -26,9 +26,9 @@
       },
       "Microsoft.Build.Framework": {
         "type": "Direct",
-        "requested": "[17.6.3, )",
-        "resolved": "17.6.3",
-        "contentHash": "rmLkJflFxc9jGkq6kd3CHdZp8T7txNM95pYo4p0fRG4/PDE1bWyvTF98qQA/pCjousO/oqEURKEDCQBj5A0dqA==",
+        "requested": "[17.7.0, )",
+        "resolved": "17.7.0",
+        "contentHash": "MOfDbiZ/jatD76+LiAkc0X5jdC2hlHrRr01TAKwePrhVSCj8e+TPQrI8goGwCTJ1vcerNHLdHgBGdJfiEMrmFA==",
         "dependencies": {
           "System.Security.Permissions": "7.0.0"
         }
