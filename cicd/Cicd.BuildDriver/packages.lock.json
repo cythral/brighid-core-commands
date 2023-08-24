@@ -148,8 +148,8 @@
       },
       "Microsoft.Build.Framework": {
         "type": "Transitive",
-        "resolved": "17.7.0",
-        "contentHash": "MOfDbiZ/jatD76+LiAkc0X5jdC2hlHrRr01TAKwePrhVSCj8e+TPQrI8goGwCTJ1vcerNHLdHgBGdJfiEMrmFA==",
+        "resolved": "17.7.2",
+        "contentHash": "F+SglYQv6ij5RK4Bmd1X4q01E2ry4M8/huTIZ/1Vk7ZoxdT2J3vmV23cnJZsA/ZLunOTv3B905TU5J1eFmWNPw==",
         "dependencies": {
           "System.Security.Permissions": "7.0.0"
         }
@@ -494,7 +494,7 @@
           "Amazon.CDK.Lib": "[2.93.0, )",
           "Cicd.Utils": "[1.0.0, )",
           "Constructs": "[10.2.69, )",
-          "Microsoft.Build.Framework": "[17.7.0, )",
+          "Microsoft.Build.Framework": "[17.7.2, )",
           "Microsoft.Build.Utilities.Core": "[17.7.0, )"
         }
       },
