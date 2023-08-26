@@ -35,12 +35,12 @@
       },
       "Microsoft.Build.Utilities.Core": {
         "type": "Direct",
-        "requested": "[17.7.0, )",
-        "resolved": "17.7.0",
-        "contentHash": "YPtlB4squjRBHLajZfqXD7m7nH856QFILVaFsfZ9gtkrp6zgUTkapFbIaO2xU/FB1Q8QvtmR0Q8zT8BoWPjiTA==",
+        "requested": "[17.7.2, )",
+        "resolved": "17.7.2",
+        "contentHash": "soXfaIBW904uEP6WTDv7EbiT0vRfBdNIcqOOEOfyy27WEa8DaXVPQJYSlsDGycS7uTnYU8vlROJbbmlCTBL7hg==",
         "dependencies": {
-          "Microsoft.Build.Framework": "17.7.0",
-          "Microsoft.NET.StringTools": "17.7.0",
+          "Microsoft.Build.Framework": "17.7.2",
+          "Microsoft.NET.StringTools": "17.7.2",
           "Microsoft.VisualStudio.Setup.Configuration.Interop": "3.2.2146",
           "System.Collections.Immutable": "7.0.0",
           "System.Configuration.ConfigurationManager": "7.0.0",
@@ -237,8 +237,8 @@
       },
       "Microsoft.NET.StringTools": {
         "type": "Transitive",
-        "resolved": "17.7.0",
-        "contentHash": "Ne4lILyriK85aaeRAt6WznjThyc/esNuoS3dnn/3pd2ef12c7UfVwv1/lQYOqhK/6+gUPcQAYQi9C9pXycK9NA=="
+        "resolved": "17.7.2",
+        "contentHash": "GDm2qPXJeWR4FSwY90zYZ+Wd0CN4FE+Nu2F57Vu8avatMzNQxV9WaVEBZFKbT4JLhNcXKc0CKBO50oVoRJR5BQ=="
       },
       "Microsoft.VisualStudio.Setup.Configuration.Interop": {
         "type": "Transitive",
