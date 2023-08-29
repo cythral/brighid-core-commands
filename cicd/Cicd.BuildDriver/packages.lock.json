@@ -100,12 +100,12 @@
       },
       "Amazon.JSII.Runtime": {
         "type": "Transitive",
-        "resolved": "1.87.0",
-        "contentHash": "yj3QKpLwumvY4BFvEvfnoTN7ob7Rl3lRyDvyrIFnWRhnVAW8ckUInNWS255GywPcoPGYw9KNITxNitFVHiF5vA==",
+        "resolved": "1.88.0",
+        "contentHash": "nnMkYPbQRalOYZcrFt4fzZJKzmCDRj0JSxtmpwXboRVYu4zK8EHWo2T5vMvB38XH7jQwiT6nIJ/3l4b8Je+abQ==",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Microsoft.Extensions.Logging": "5.0.0",
-          "Microsoft.Extensions.Logging.Console": "5.0.0",
+          "Microsoft.Extensions.Logging": "7.0.0",
+          "Microsoft.Extensions.Logging.Console": "7.0.0",
           "Newtonsoft.Json": "13.0.3"
         }
       },
@@ -140,10 +140,10 @@
       },
       "Constructs": {
         "type": "Transitive",
-        "resolved": "10.2.69",
-        "contentHash": "wnA2dMG2ROY9SxL0wYSjkevHQcp1tEQCHwmKrXw6Ye+tjaVEJuoVUH24YYtSltzC0bj+NjwbxRJoomfD3TOHfg==",
+        "resolved": "10.2.70",
+        "contentHash": "QmXI/OJreuGGsZUT0+sHscT+OB+wkbNFikdSnGS8owcWP+QCCfb7AKJPqIUUA7IMSb32pMFDRlmvsdtVebAhag==",
         "dependencies": {
-          "Amazon.JSII.Runtime": "[1.84.0, 2.0.0)"
+          "Amazon.JSII.Runtime": "[1.88.0, 2.0.0)"
         }
       },
       "Microsoft.Build.Framework": {
@@ -493,7 +493,7 @@
         "dependencies": {
           "Amazon.CDK.Lib": "[2.93.0, )",
           "Cicd.Utils": "[1.0.0, )",
-          "Constructs": "[10.2.69, )",
+          "Constructs": "[10.2.70, )",
           "Microsoft.Build.Framework": "[17.7.2, )",
           "Microsoft.Build.Utilities.Core": "[17.7.2, )"
         }
