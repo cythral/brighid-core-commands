@@ -4,20 +4,20 @@
     "net7.0": {
       "AWSSDK.SecurityToken": {
         "type": "Direct",
-        "requested": "[3.7.103.14, )",
-        "resolved": "3.7.103.14",
-        "contentHash": "SN+7bIYmWX8GZSGdCPMDcQr+7bX+9FIAqVqVYSzUhBtkaZKYItYVOiZFcNFrBBmFjeMU5mnX3w82Psb65wuIuw==",
+        "requested": "[3.7.300.56, )",
+        "resolved": "3.7.300.56",
+        "contentHash": "qobpOXKimsMbjrrRzBCf6H5bOhZsDVq0id60vOACDG1j+6p3vpWQUUolIhDr2ZAfj/jRTFvA28t3gkukladodg==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.107.6, 4.0.0)"
+          "AWSSDK.Core": "[3.7.302.16, 4.0.0)"
         }
       },
       "AWSSDK.SimpleEmail": {
         "type": "Direct",
-        "requested": "[3.7.100.145, )",
-        "resolved": "3.7.100.145",
-        "contentHash": "TOQqBIlBsJ80sd2vOL68ebSA0QVVUNtGSB6Hx44vZ0Y6FrTvz5iBgivRKBAaXpYc4+9JFTtQ2sAPuqXQYkZhIw==",
+        "requested": "[3.7.300.55, )",
+        "resolved": "3.7.300.55",
+        "contentHash": "NBRmajLWIIO4nneMqkdgsIeFCsoPVbTz/XcxfVgXQBAdinEf/LCQ4FfTNrokcv1fCF5XOYAt/Llok89855aTPg==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.107.6, 4.0.0)"
+          "AWSSDK.Core": "[3.7.302.16, 4.0.0)"
         }
       },
       "Brighid.Commands.Sdk": {
@@ -62,8 +62,8 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.107.6",
-        "contentHash": "sHsEWKLrfe6nEa78wQ8gprLE7XiBTjEubTImsQ0A0DX25dIuD2mlJgy15N52E/xEP97sVtHoPfUFzmEb0YeQDA=="
+        "resolved": "3.7.302.16",
+        "contentHash": "iR/YHr8gkDqXHlOcSEzPFljboB8B7UhXdm3NfzvMeLGDW+pD3Xfs1+oh98DS1+PfC7rZKGco8jYEjOZgt7vwpw=="
       },
       "Brighid.Commands.Sdk.Attributes": {
         "type": "Transitive",
