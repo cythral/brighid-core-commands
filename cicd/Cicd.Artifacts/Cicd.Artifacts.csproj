@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Amazon.CDK.Lib" Version="2.131.0" />
+        <PackageReference Include="Amazon.CDK.Lib" Version="2.132.0" />
         <PackageReference Include="Constructs" Version="10.3.0" />
         <PackageReference Include="Microsoft.Build.Framework" Version="17.9.5" />
         <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.9.5" />
